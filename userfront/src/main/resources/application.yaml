@@ -1,0 +1,12 @@
+server:
+  port: 8098
+
+tarantool:
+  host: ${DOCKER_HOST}
+  port: 3301
+  username: admin
+  password: admin
+
+spring:
+  main:
+    allow-bean-definition-overriding: true

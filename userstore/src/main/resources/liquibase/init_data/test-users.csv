@@ -1,0 +1,4 @@
+id;login;password_hash;first_name;last_name;age;sex
+1;titkin;12345_fakehash;Кеша;Титькин;18;1
+2;predator123;12345_fakehash;Ivan;Ivanov;25;1
+3;ololosha;12345_fakehash;Alesha;Ololosha;20;0

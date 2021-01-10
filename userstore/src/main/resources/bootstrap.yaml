@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: userstore
+  cloud:
+    consul:
+      host: ${DOCKER_HOST:localhost}
+      port: ${CONSUL_PORT:8500}
+      config:
+        enabled: true
+        prefix:
+        defaultContext: ${spring.application.name}
+      discovery:
+        register: false
+        instanceId: ${spring.application.name}:${random.value}
+
+    service-registry:
+      auto-registration:
+        enabled: false

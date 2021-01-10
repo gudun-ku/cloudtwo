@@ -1,0 +1,14 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: template-app
+  datasource:
+    url: jdbc:mysql://${DOCKER_HOST}:3306/mydb
+    username: mydb_user
+    password: mydb_pwd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  liquibase:
+    change-log: classpath:liquibase/master.xml

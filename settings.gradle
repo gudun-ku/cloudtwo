@@ -1,0 +1,5 @@
+rootProject.name = 'cloudtwo'
+include 'userstore'
+include 'userfront'
+include 'common-dto'
+
